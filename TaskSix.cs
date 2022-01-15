@@ -10,8 +10,8 @@ namespace Kolokwium2
     {
         public static void work()
         {
+            Console.WriteLine("Wprowadz tekst do przeszukania");
             string input = Console.ReadLine();
-            //Console.WriteLine($"{input[0]}");
             List<char> charList = new();
             List<int> intList = new();
             for (int i=0; i<input.Length; i++)

@@ -21,8 +21,6 @@ namespace Kolokwium2
                 string ileodzakupu = (datazakupu < 0) ? $"uplynely {datazakupu} lata" : $"uplynelo {datazakupu} lat";
                 Console.WriteLine($"Od daty zakupu {ileodzakupu}");
             }
-
-            Console.ReadLine();
         }
     }
 }

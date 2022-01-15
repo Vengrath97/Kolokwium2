@@ -11,33 +11,24 @@ namespace Kolokwium2
         public static void tables()
         {
                 int[] tablica = new int[10] { 5,235,1234,5,-2345,-2,53,2341,-34,-34534 };
-                int najmniejszy = 0;
-                int najwiekszy = 0;
-                double sredniaWszystkich = 0;
-                int liczbaDodatnichElementow = 0;
-
-
+                int min = 0;
+                int max = 0;
+                double average = 0;
+                int positiveCount = 0;
                 for (int x = 0; x < tablica.Length; x++)
                 {
-                    if (najmniejszy > tablica[x])
-                    {
-                        najmniejszy = tablica[x];
-                    }
-                    if (najwiekszy < tablica[x])
-                    {
-                        najwiekszy = tablica[x];
-                    }
-                    if (tablica[x] > 0)
-                    {
-                        liczbaDodatnichElementow++;
-                    }
-                    sredniaWszystkich += tablica[x];
+                    if (min > tablica[x]) { min = tablica[x]; }
+                    if (max < tablica[x]) { max = tablica[x]; }
+                    if (tablica[x] > 0) { positiveCount++; }
+                    average += tablica[x];
                 }
-                int a = Array.IndexOf(tablica, najmniejszy);
-                int b = Array.IndexOf(tablica, najwiekszy);
-                sredniaWszystkich = sredniaWszystkich / tablica.Length;
-                Console.WriteLine("\nNajmniejszy element wynosi: {0} wartość tego elementu znajduje się w indexie: {1} \nNajwiekszy element wynosi: {2} wartość tego elementu znajduje się w indexie: {3} \nLiczba dodatnich elementow wynosi: {4} \nSrednia wartosci wszystkich elementow wynosi: {5}", najmniejszy, a, najwiekszy, b, liczbaDodatnichElementow, sredniaWszystkich);
-                Console.ReadKey();
+                int a = Array.IndexOf(tablica, min);
+                int b = Array.IndexOf(tablica, max);
+                average = average / tablica.Length;
+                Console.WriteLine($"Najmniejszy element wynosi: {min} wartość tego elementu znajduje się w indexie: {a}\n"    +
+                                  $"Najwiekszy element wynosi: {max} wartość tego elementu znajduje się w indexie: {b}\n"     +
+                                  $"Liczba dodatnich elementow wynosi: {positiveCount}\n"                                     +
+                                  $"Srednia wartosci wszystkich elementow wynosi: {average}");
             }
 
         }
