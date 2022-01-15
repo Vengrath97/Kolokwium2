@@ -8,44 +8,62 @@ namespace Kolokwium2
         static void Main(string[] args)
         {
             // zadanie 1; liczba to maksymalna do której wyswietlac
-            //TaskOne.perfectInRange(9000);
+            Console.WriteLine("Zadanie 1");
+            TaskOne.perfectInRange(9000);
+            Console.ReadKey();
 
 
             //zadanie 2 
-            //TaskTwo.Combinations();
+            Console.WriteLine("Zadanie 2");
+            TaskTwo.Combinations();
+            Console.ReadKey();
 
 
             //zadanie 3
-            ///TaskThree.tables();
+            Console.WriteLine("Zadanie 3");
+            TaskThree.tables();
+            Console.ReadKey();
 
 
             //zadanie 4, pierwszy to minimalna, drugi to maksymalna
-            //TaskFour.writePrimesInRange(1, 100);
+            Console.WriteLine("Zadanie 4");
+            TaskFour.writePrimesInRange(1, 100);
+            Console.ReadKey();
 
 
             //zadanie 5, tutaj są wymiariy x/y tych macierzy do wprowadzenia
-            //TaskFive.addMatrixes(5,5);
+            Console.WriteLine("Zadanie 5");
+            TaskFive.addMatrixes(5, 5);
+            Console.ReadKey();
 
 
             //zadanie 6
-            //TaskSix.work();
+            Console.WriteLine("Zadanie 6");
+            TaskSix.work();
+            Console.ReadKey();
 
 
             //zadanie 7
-            //TaskSeven.work();
+            Console.WriteLine("Zadanie 7");
+            TaskSeven.work();
+            Console.ReadKey();
 
 
             //zadanie 8
-            //Console.WriteLine("Wprowadz tekst do zaszyfrowania")
-            //TaskEight.ciptherThis(Console.ReadLine());
+            Console.WriteLine("Zadanie 8");
+            Console.WriteLine("Wprowadz tekst do zaszyfrowania");
+            TaskEight.ciptherThis(Console.ReadLine());
+            Console.ReadKey();
 
 
             //zadanie 9
-
+            Console.WriteLine("Zadanie 9");
+            TaskNine.solution();
+            Console.ReadKey();
 
 
             //zadanie 10
-
+            Console.WriteLine("Zadanie 10");
 
             Console.ReadKey();
         }
