@@ -10,7 +10,7 @@ namespace Kolokwium2
     {
         enum MyEnum
         {
-            Strength,
+            Strength = 2,
             Dexterity,
             Constitution,
             Inteligence,
@@ -19,10 +19,11 @@ namespace Kolokwium2
         }
         public static void solution()
         {
-            int namesCount = Enum.GetNames(typeof(MyEnum)).Length;
-            for (int i=0; i<namesCount; i++)
+            int iterator = 0;
+            foreach (int i in Enum.GetValues(typeof(MyEnum)))
             {
-                Console.WriteLine($"Enum z nazwą {Enum.GetNames(typeof(MyEnum))[i]} ma wartość liczbową {i}");
+                Console.WriteLine($"Enum z nazwą {Enum.GetNames(typeof(MyEnum))[iterator]} ma wartość liczbową {i}");
+                iterator += 1;
             }
         }
     }
