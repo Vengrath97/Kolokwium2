@@ -12,16 +12,12 @@ namespace Kolokwium2
         {
             if (input < 2) return false;
             if (input == 2) return true;
-            bool ISPRIME = true;
-            for (int i=2; i<input; i++)
+            bool isPrime = true;
+            for (int i=2; i<input/2+2; i++)
             {
-                if ((input % i) == 0)
-                {
-                    ISPRIME = false;
-                }
-
+                if ((input % i) == 0) { isPrime = false; }
             }
-            return ISPRIME;
+            return isPrime;
         }
         public static void writePrimesInRange(int min, int max)
         {
@@ -29,7 +25,6 @@ namespace Kolokwium2
             {
                 if (TaskFour.isPrime(i) == true) { Console.WriteLine(i); }
             }
-            Console.WriteLine("");
         }
     }
 }
