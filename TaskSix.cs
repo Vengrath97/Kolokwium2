@@ -28,8 +28,7 @@ namespace Kolokwium2
         {
             foreach (char item in list)
             {
-                if (input == item)
-                    return true;
+                if (input == item) return true;
             }
             return false;
         }
@@ -39,7 +38,7 @@ namespace Kolokwium2
             {
                 if (input == charList[i]) { return i; }
             }
-            return 999;
+            return -1;
 
         }
         static void display(List<char> charList, List<int> intList)
