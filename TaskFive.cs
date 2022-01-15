@@ -22,21 +22,7 @@ namespace Kolokwium2
                 for (int iy = 0; iy < y; iy++)
                 {
                     a[ix, iy] = rnd.Next(100);
-                }
-            }
-            for (int ix = 0; ix < x; ix++)
-            {
-                for (int iy = 0; iy < y; iy++)
-                {
                     b[ix, iy] = rnd.Next(100);
-                }
-            }
-
-            //liczy C
-            for (int ix = 0; ix < x; ix++)
-            {
-                for (int iy = 0; iy < y; iy++)
-                {
                     c[ix, iy] = a[ix, iy] + b[ix, iy];
                 }
             }
