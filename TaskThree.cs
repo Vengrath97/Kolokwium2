@@ -25,10 +25,10 @@ namespace Kolokwium2
                 int a = Array.IndexOf(tablica, min);
                 int b = Array.IndexOf(tablica, max);
                 average = average / tablica.Length;
-                Console.WriteLine($"Najmniejszy element wynosi: {min} wartość tego elementu znajduje się w indexie: {a}\n"    +
-                                  $"Najwiekszy element wynosi: {max} wartość tego elementu znajduje się w indexie: {b}\n"     +
-                                  $"Liczba dodatnich elementow wynosi: {positiveCount}\n"                                     +
-                                  $"Srednia wartosci wszystkich elementow wynosi: {average}");
+                Console.WriteLine($"Najmniejszy element wynosi: {min} wartość tego elementu znajduje się w indexie: {a}");
+                Console.WriteLine($"Najwiekszy element wynosi: {max} wartość tego elementu znajduje się w indexie: {b}");
+                Console.WriteLine($"Liczba dodatnich elementow wynosi: {positiveCount}");
+                Console.WriteLine($"Srednia wartosci wszystkich elementow wynosi: {average}");
             }
 
         }
